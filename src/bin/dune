@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (libraries
+  wasmini
+  core))

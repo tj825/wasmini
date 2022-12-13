@@ -1,0 +1,13 @@
+name : "wasmini"
+opam-version : "2.0"
+maintainer : "Tom Jack <tom.jack@marigold.dev>"
+authors : [ "Tom Jack" ]
+synopsis : "An interpreter for a simplified WASM"
+license : "MIT"
+depends: [
+  "dune" { build }
+  "alcotest" { with-test }
+]
+build: [
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
